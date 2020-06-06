@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination Utility Get total pages with total - total items = 30 1`] = `3`;
+
+exports[`Pagination Utility Get total pages with total - total items = 31 1`] = `4`;
+
+exports[`Pagination Utility Get values to paginate = currentPage = 1 1`] = `
+Object {
+  "limit": 10,
+  "offset": 0,
+}
+`;
+
+exports[`Pagination Utility Get values to paginate - currentPage = 5 1`] = `
+Object {
+  "limit": 10,
+  "offset": 40,
+}
+`;

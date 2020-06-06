@@ -1,0 +1,43 @@
+{
+	"name": "pagination-utility",
+	"version": "0.1.0",
+	"description": "Utility to implement pagination functionality",
+	"private": true,
+	"main": "dist/index.js",
+	"scripts": {
+		"prebuild": "rimraf ./dist",
+		"build": "tsc",
+		"test": "jest",
+		"lint": "eslint . --ext .ts",
+		"lint-and-fix": "eslint . --ext .ts --fix",
+		"format": "prettier --config .prettierrc \"src/**/*.ts\" --write"
+	},
+	"keywords": [
+		"paginator",
+		"pagination",
+		"simple pagination"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/salatielosorno/pagination-utility.git"
+	},
+	"engines": {
+		"node": ">=10"
+	},
+	"author": "Salatiel Osorno Linares",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/jest": "25.2.3",
+		"@types/node": "12.12.31",
+		"@typescript-eslint/eslint-plugin": "2.25.0",
+		"@typescript-eslint/parser": "2.25.0",
+		"eslint": "6.8.0",
+		"eslint-config-prettier": "6.10.1",
+		"eslint-plugin-prettier": "3.1.2",
+		"jest": "26.0.1",
+		"prettier": "2.0.2",
+		"rimraf": "3.0.2",
+		"typescript": "3.8.3",
+		"ts-jest": "26.1.0"
+	}
+}
