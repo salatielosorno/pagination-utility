@@ -1,16 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var PaginationUtility;
-(function (PaginationUtility) {
-    function getValuesToPaginate(options) {
+var PaginationUtility = /** @class */ (function () {
+    function PaginationUtility() {
+    }
+    PaginationUtility.getValuesToPaginate = function (options) {
         var currentPage = Math.floor(options.currentPage);
         var perPage = Math.floor(options.perPage);
         var offset = currentPage == 1 ? 0 : (currentPage - 1) * perPage;
         var limit = perPage * 1;
         return { limit: limit, offset: offset };
-    }
-    PaginationUtility.getValuesToPaginate = getValuesToPaginate;
-    function getTotalPages(options) {
+    };
+    PaginationUtility.getTotalPages = function (options) {
         var perPage = Math.floor(options.perPage);
         var totalItems = options.totalItems == 0 ? 1 : options.totalItems;
         var totalPages;
@@ -24,6 +24,7 @@ var PaginationUtility;
                     : totalItems / perPage;
         }
         return totalPages;
-    }
-    PaginationUtility.getTotalPages = getTotalPages;
-})(PaginationUtility = exports.PaginationUtility || (exports.PaginationUtility = {}));
+    };
+    return PaginationUtility;
+}());
+exports.PaginationUtility = PaginationUtility;

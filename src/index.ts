@@ -1,5 +1,5 @@
-export namespace PaginationUtility {
-  export function getValuesToPaginate(options: {
+export class PaginationUtility {
+  static getValuesToPaginate(options: {
     currentPage: number;
     perPage: number;
   }) {
@@ -11,10 +11,7 @@ export namespace PaginationUtility {
     return { limit, offset };
   }
 
-  export function getTotalPages(options: {
-    totalItems: number;
-    perPage: number;
-  }) {
+  static getTotalPages(options: { totalItems: number; perPage: number }) {
     const perPage = Math.floor(options.perPage);
     const totalItems = options.totalItems == 0 ? 1 : options.totalItems;
     let totalPages;
