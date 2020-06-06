@@ -1,11 +1,12 @@
 {
 	"name": "pagination-utility",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "Utility to implement pagination functionality",
 	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"scripts": {
 		"prebuild": "rimraf ./dist",
-		"build": "tsc",
+		"build": "tsc --declaration",
 		"test": "jest",
 		"lint": "eslint . --ext .ts",
 		"lint-and-fix": "eslint . --ext .ts --fix",
