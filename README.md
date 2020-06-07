@@ -1,5 +1,5 @@
 # Pagination Utility
-
+[![npm](https://img.shields.io/npm/v/pagination-utility?color=green&style=flat-square)](https://www.npmjs.com/package/pagination-utility)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 ## Intro 
@@ -36,4 +36,4 @@ const totalPages = PaginationUtility.getTotalPages({ totalItems: 4872, perPage: 
 
 ## License
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![NPM](https://img.shields.io/npm/l/pagination-utility?color=red&style=flat-square)](https://opensource.org/licenses/MIT)
